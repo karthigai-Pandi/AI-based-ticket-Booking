@@ -80,7 +80,8 @@ The application is now configured to run with SQLite for development when MySQL 
 
 You can also run both from the repo root with PowerShell:
 
-- `./run-dev.ps1`
+- `./run-dev.ps1` 
+users can also contibute 
 
 ## Environment Examples
 
