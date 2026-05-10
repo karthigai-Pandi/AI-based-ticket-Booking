@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: ai-service-ticket-backend
+    env: node
+    region: oregon
+    plan: starter
+    branch: main
+    buildCommand: cd backend && npm ci
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "5000"
+      - key: JWT_SECRET
+        value: "REPLACE_WITH_SECRET"
+      - key: DB_HOST
+        value: "REPLACE_WITH_DB_HOST"
+      - key: DB_PORT
+        value: "3306"
+      - key: DB_USER
+        value: "REPLACE_WITH_DB_USER"
+      - key: DB_PASSWORD
+        value: "REPLACE_WITH_DB_PASSWORD"
+      - key: DB_NAME
+        value: "ai_service_desk"
+      - key: CORS_ORIGIN
+        value: "https://<your-frontend-domain>"
