@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "build":"npm install && npm run start"
+    "build": "npm install && npm rebuild sqlite3 --build-from-source"
   },
   "keywords": [
     "service desk",
