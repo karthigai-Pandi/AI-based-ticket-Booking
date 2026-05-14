@@ -112,6 +112,7 @@ export default function LoginPage() {
                   <input
                     type="email"
                     name="email"
+                    autoComplete="email"
                     value={form.email}
                     onChange={handleChange}
                     className="w-full rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-12 py-4 text-slate-100 outline-none transition-all duration-300 placeholder:text-slate-500 focus:border-purple-400 focus:bg-white/10 focus:shadow-glow"
@@ -130,6 +131,7 @@ export default function LoginPage() {
                   <input
                     type={showPassword ? 'text' : 'password'}
                     name="password"
+                    autoComplete="current-password"
                     value={form.password}
                     onChange={handleChange}
                     className="w-full rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-12 py-4 text-slate-100 outline-none transition-all duration-300 placeholder:text-slate-500 focus:border-purple-400 focus:bg-white/10 focus:shadow-glow pr-12"
